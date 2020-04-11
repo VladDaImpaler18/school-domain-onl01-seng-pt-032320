@@ -23,7 +23,9 @@ class School
   end
   
   def sort
-    @roster.
+    @roster.map do |grade, studentList|
+      studentList.sort
+    end
   end
 
 end
